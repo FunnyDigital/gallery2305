@@ -752,7 +752,7 @@ a {
 }
 .cid-sFHpMqcXGj .dropdown-menu,
 .cid-sFHpMqcXGj .navbar.opened {
-  background: #ffffff !important;
+  background: #bed3f9 !important;
 }
 .cid-sFHpMqcXGj .nav-item:focus,
 .cid-sFHpMqcXGj .nav-link:focus {
@@ -787,7 +787,7 @@ a {
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: #ffffff;
+  background: #bed3f9;
 }
 .cid-sFHpMqcXGj .navbar.opened {
   transition: all 0.3s;
@@ -927,7 +927,7 @@ a {
   padding: 0.667em 1.667em;
 }
 .cid-sFHpMqcXGj .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff;
+  background: #bed3f9;
 }
 .cid-sFHpMqcXGj .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -1063,20 +1063,107 @@ a {
 .cid-tgJNpLxshB {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #ffffff;
+  background-color: #ffe885;
 }
 .cid-tgJNpLxshB .mbr-text {
   text-align: center;
 }
-.cid-tiaaFesfxc {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.cid-tiaSGHWiH2 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #97c6b1;
+}
+.cid-tiaSGHWiH2 * {
+  cursor: none;
+  box-sizing: border-box;
+}
+.cid-tiaSGHWiH2 .cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  pointer-events: none;
+  border-radius: 50% 100% 100% 100%;
+  z-index: 9999999;
+  mix-blend-mode: difference;
+  opacity: 0;
+}
+.cid-tiaSGHWiH2 html,
+.cid-tiaSGHWiH2 body {
+  padding: 0;
+  margin: 0;
+  color: #28282e;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #fff;
+}
+.cid-tiaSGHWiH2 h1 {
+  font-size: 4vh;
+  margin-bottom: 0;
+  letter-spacing: -0.05em;
+  word-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.cid-tiaSGHWiH2 p {
+  margin-bottom: 3vh;
+  color: #888;
+}
+.cid-tiaSGHWiH2 .container {
+  width: 60rem;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+.cid-tiaSGHWiH2 .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+.cid-tiaSGHWiH2 .gallery--item {
+  display: block;
+}
+.cid-tiaSGHWiH2 .gallery--item:first-of-type {
+  grid-column: span 2;
+}
+.cid-tiaSGHWiH2 .gallery--item:last-of-type {
+  grid-column: span 2;
+}
+.cid-tiaSGHWiH2 .gallery--img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 33vh;
+  max-height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #292935;
+  transition: 0.4s ease-in-out 0.1s;
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0);
+}
+.cid-tiaSGHWiH2 .gallery--img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 2px 48px -2px rgba(0, 0, 0, 0.3);
+}
+.cid-tiaSGHWiH2 a {
+  color: #6E30EC;
+}
+.cid-tiaSGHWiH2 a:hover {
+  color: #4d22a5;
+}
+.cid-tiaSGHWiH2 H1 {
+  color: #ffffff;
+}
+.cid-tibuzkHZRp {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #ffffff;
 }
-.cid-tiaaFesfxc .mbr-fallback-image.disabled {
+.cid-tibuzkHZRp .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-tiaaFesfxc .mbr-fallback-image {
+.cid-tibuzkHZRp .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -1085,45 +1172,20 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-tiaaFesfxc .video-wrapper iframe {
+.cid-tibuzkHZRp .row {
+  flex-direction: row-reverse;
+}
+.cid-tibuzkHZRp .video-wrapper video {
   width: 100%;
 }
-.cid-tiaaFesfxc .mbr-section-title,
-.cid-tiaaFesfxc .mbr-description {
+.cid-tibuzkHZRp .mbr-section-title,
+.cid-tibuzkHZRp .mbr-description {
   text-align: center;
 }
 @media (min-width: 992px) {
-  .cid-tiaaFesfxc .text-wrapper {
+  .cid-tibuzkHZRp .text-wrapper {
     padding: 2rem;
   }
-}
-.cid-tiab0aEjCc {
-  padding-top: 30px;
-  padding-bottom: 75px;
-  background-color: #ffffff;
-}
-.cid-tiab0aEjCc .mbr-section {
-  text-align: center;
-  color: #fff;
-}
-.cid-tiab0aEjCc H2 {
-  color: #7f1933;
-}
-.cid-tiab0aEjCc #instafeed-loader {
-  display: none;
-}
-.cid-tiab0aEjCc .instagram_profile_image {
-  margin:  0 auto 2rem auto;
-}
-.cid-tiab0aEjCc .profile-img {
-  margin:  0 auto 2rem auto;
-  width: 120px;
-  height: 120px;
-}
-.cid-tiab0aEjCc .loader-img {
-  margin:  0 auto 2rem auto;
-  width: 120px;
-  height: 20px;
 }
 .cid-tgzaezBdGi {
   padding-top: 30px;

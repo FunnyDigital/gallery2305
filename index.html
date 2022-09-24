@@ -32,7 +32,32 @@
   
 </head>
 <body>
-  
+  import animejs from "https://cdn.skypack.dev/animejs@3.2.1";
+
+function move({ clientX: x, clientY: y, target }) {
+	let scale = 1;
+
+	if (target && target.classList && target.classList.contains("link")) {
+		scale = 1.75;
+	}
+
+	const cursorElement = animejs({
+		targets: ".cursor",
+		translateX: Math.floor(x),
+		translateY: Math.floor(y),
+		rotate: x / -8 + 135,
+		scale,
+		easing: "easeOutElastic(1, 1)"
+	});
+}
+
+window.addEventListener("mousemove", move);
+
+window.onload = () =>
+	animejs({
+		targets: ".cursor",
+		opacity: 1
+	});
   <section data-bs-version="5.1" class="menu menu2 cid-sFHpMqcXGj" once="menu" id="menu2-2">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -71,12 +96,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 image-wrapper">
-                <img class="w-100" src="assets/images/qr-code-1239x1239.png" alt="qr code">
+                <img class="w-100" src="assets/images/gallery2305lagos-cio-teknca3-1-1076x1080.jpg" alt="qr code">
             </div>
             <div class="col-12 col-md">
                 <div class="text-wrapper text-center">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Gallery2305</strong></h1>
-                    <p class="mbr-text mbr-fonts-style display-7">sharing my art story-by Nosa Ojo</p>
+                    <p class="mbr-text mbr-fonts-style display-7">sharing my art story-by.</p>
                     
                 </div>
             </div>
@@ -91,63 +116,76 @@
             <div class="col-md-12 col-lg-4">
                 
                 
-                <p class="mbr-text mbr-fonts-style display-7">IN-HOUSE PRIVATE EXHIBITION</p>
+                <p class="mbr-text mbr-fonts-style display-7">CHRISTIE'S PRIVATE SALES</p>
             </div>
         </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="video4 cid-tiaaFesfxc" id="video4-f">
+<section class="mbr-section mbr-section--no-padding cid-tiaSGHWiH2" id="witsec-html-block-i">
+
+
+
+
+
+<!-- Place your own code below -->
+<div class="container" style="text-align:center">
+<i class="cursor"></i>
+
+<div class="container">
+	<h1>SEE MY STORY<br><br></h1>
+	<p><a href="https://www.instagram.com/p/nosaojocharles/" target="_blank" class="text-white">See instagram post</a></p>
+
+	<div class="gallery">
+		<a href="https://www.instagram.com/gallery2305lagos/?hl=en" class="gallery--item">
+			<img class="gallery--img link" src="assets/images/gallery2305lagos-citkimxob6z-1-880x880.jpg" alt="">
+		</a>
+		<a href="https://www.instagram.com/gallery2305lagos/?hl=en" class="gallery--item" target="_blank">
+			<img class="gallery--img link" src="assets/images/nosaojocharles-story-2711469490686970724-9255854133-424x754.jpg" alt="">
+		</a>
+		<a href="https://siamak.me" class="gallery--item">
+			<img class="gallery--img link" src="https://source.unsplash.com/ruJm3dBXCqw/403x600/">
+		</a>
+		<a href="https://siamak.me" class="gallery--item">
+			<img class="gallery--img link" src="https://source.unsplash.com/75EFpyXu3Wg/405x600/">
+		</a>
+		<a href="https://siamak.me" class="gallery--item">
+			<img class="gallery--img link" src="assets/images/gallery2305lagos-cio-teknca3-1-424x426.jpg" alt="">
+		</a>
+		<a href="https://siamak.me" class="gallery--item">
+			<img class="gallery--img link" src="assets/images/gallery2305lagos-cio-teknca3-2-880x880.jpg" alt="">
+		</a>
+	</div>
+</div>
+
+<!-- Place your own code above -->
+
+</div></section>
+
+<section data-bs-version="5.1" class="video5 cid-tibuzkHZRp" id="video5-k">
     
+
     
     
     <div class="container">
         <div class="title-wrapper mb-5">
-            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2">
-                <strong>Watch Video</strong>
-            </h4>
+            
         </div>
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 video-block">
-                <div class="video-wrapper"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/HujDEPAWboE?rel=0&amp;amp;mute=1&amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
-                <p class="mbr-description pt-2 mbr-fonts-style display-4">
-                    Video Description</p>
+                <div class="video-wrapper"><iframe class="mbr-embedded-video" src="file:///C:/Users/Patrick/Desktop/Gallery2305/gallery2305/assets/video/video.mp4?loop=1&amp;autoplay=1" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+              
             </div>
             <div class="col-12 col-lg">
                 <div class="text-wrapper">
-                    <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5">
-                        <strong>Video with description</strong>
-                    </h5>
+                    <h3 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5">
+                        <strong>View in Action</strong></h3>
                     <p class="mbr-text mbr-fonts-style display-7">
                         Use Mobirise website building software to create multiple sites for commercial and non-profit projects. Click on the video preview in this block to add the link to your video. Make sure that your video is not private. You can add a description below the video. If you want to hide some of the text fields, open the Block parameters, and uncheck relevant options.</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-<section class="mbr-section instafeed content1 cid-tiab0aEjCc" id="feedblock-g">
-
-     
- <div class="container instafeed-configuration">
-<input type="hidden" id="instafeedinsusername" value="gallery2305lagos">
-<input type="hidden" id="no_item" value="8">
-<input type="hidden" id="no_row" value="4">
-<input type="hidden" id="no_margin" value="1.2">
-<input type="hidden" id="instafeedprofile" value="1"> 
-<input type="hidden" id="instafeedbiography" value="1"> 
-<input type="hidden" id="instafeedgallery" value="1"> 
-<input type="hidden" id="instafeedcaptions" value="1"> 
-<input type="hidden" id="instafeedigtv" value="0"> 
-<input type="hidden" id="instafeedlazy_load" value="0"> 
-<input type="hidden" id="instafeedcache_time" value="120">   
-
-</div> 
-    <div class="container">
-
-      
-	<div id="instagram-feed-v1" class="instagram_feed"><div class="text-center"><img class="rounded-circle profile-img" src="assets/images/qr-code-240x240.png" alt="" title=""></div><div class="text-center pt-3" id="instafeed-loader"><img class="loader-img" src="assets/images/instafeed-loader.gif" alt="" title=""> </div></div>
-      </div>
 </section>
 
 <section data-bs-version="5.1" class="footer7 cid-tgzaezBdGi" once="footers" id="footer7-0">
@@ -165,7 +203,7 @@
             </div>
         </div>
     </div>
-</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/playervimeo/vimeo_player.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/instafeed/instafeed-loader.js"></script>  <script src="assets/instafeed/instafeed.js"></script>  
+</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 </body>
