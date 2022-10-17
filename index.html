@@ -15,17 +15,18 @@
   
   
   <title>Home</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Tenor+Sans:400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenor+Sans:400&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
@@ -33,14 +34,44 @@
   
 </head>
 <body>
-  
-  <section data-bs-version="5.1" class="menu menu2 cid-sFHpMqcXGj" once="menu" id="menu2-2">
+  import animejs from "https://cdn.skypack.dev/animejs@3.2.1";
+
+function move({ clientX: x, clientY: y, target }) {
+	let scale = 1;
+
+	if (target && target.classList && target.classList.contains("link")) {
+		scale = 1.75;
+	}
+
+	const cursorElement = animejs({
+		targets: ".cursor",
+		translateX: Math.floor(x),
+		translateY: Math.floor(y),
+		rotate: x / -8 + 135,
+		scale,
+		easing: "easeOutElastic(1, 1)"
+	});
+}
+
+window.addEventListener("mousemove", move);
+
+window.onload = () =>
+	animejs({
+		targets: ".cursor",
+		opacity: 1
+	});
+  <section data-bs-version="5.1" class="menu menu1 cid-tk8ovAyCmf" once="menu" id="menu1-10">
     
+
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://nosaojo.com">
+                        <img src="assets/images/group-1-96x51.png" alt="link to nosa website" style="height: 3rem;">
+                    </a>
+                </span>
                 
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="https://mobiri.se">Gallery2305</a></span>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -51,10 +82,10 @@
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#timeline3-4">Galleries</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#features19-e">Exhibitions</a>
-                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="#top">Artist</a></li>
-                    
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#map1-a">Location</a></li></ul>
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">Exhibitions</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobiri.se">Contact</a>
+                    </li></ul>
                 
                 
             </div>
@@ -69,7 +100,7 @@
     
     
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 image-wrapper">
                 <img class="w-100" src="assets/images/gallery2305lagos-cio-teknca3-1-1076x1080.jpg" alt="qr code">
@@ -92,96 +123,38 @@
             <div class="col-md-12 col-lg-4">
                 
                 
-                <p class="mbr-text mbr-fonts-style display-7">CHRISTIE'S PRIVATE SALES</p>
+                <p class="mbr-text mbr-fonts-style display-7">Gallery 2305 is my personal gallery, showing casing my journey through art and different cultures.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="gallery5 mbr-gallery cid-tiJSPtR2PZ" id="gallery5-q">
+<section data-bs-version="5.1" class="share3 cid-tk2M6PCF6m" id="share3-z">
     
-
+     
+    
     
     
 
     <div class="container">
-        
-        <div class="row mbr-gallery mt-4">
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#tiJWNzLWCe-modal" data-bs-target="#tiJWNzLWCe-modal">
-                    <img class="w-100" src="assets/images/nike-art-gallery-506x607.jpg" alt="Mobirise Website Builder" data-slide-to="0" data-bs-slide-to="0" data-target="#lb-tiJWNzLWCe" data-bs-target="#lb-tiJWNzLWCe">
-                    <div class="icon-wrapper">
-                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                    </div>
-                </div>
-                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Paris</h6>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#tiJWNzLWCe-modal" data-bs-target="#tiJWNzLWCe-modal">
-                    <img class="w-100" src="assets/images/omenka-gallery-506x338.jpg" alt="Mobirise Website Builder" data-slide-to="1" data-bs-slide-to="1" data-target="#lb-tiJWNzLWCe" data-bs-target="#lb-tiJWNzLWCe">
-                    <div class="icon-wrapper">
-                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                    </div>
-                </div>
-                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Canada</h6>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#tiJWNzLWCe-modal" data-bs-target="#tiJWNzLWCe-modal">
-                    <img class="w-100" src="assets/images/images-275x183.jpg" alt="Mobirise Website Builder" data-slide-to="2" data-bs-slide-to="2" data-target="#lb-tiJWNzLWCe" data-bs-target="#lb-tiJWNzLWCe">
-                    <div class="icon-wrapper">
-                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                    </div>
-                </div>
-                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Yemisi Shyllon Museum of Art</h6>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 item gallery-image">
-                <div class="item-wrapper" data-toggle="modal" data-bs-toggle="modal" data-target="#tiJWNzLWCe-modal" data-bs-target="#tiJWNzLWCe-modal">
-                    <img class="w-100" src="assets/images/freedom-park-lagos-506x380.jpg" alt="Mobirise Website Builder" data-slide-to="3" data-bs-slide-to="3" data-target="#lb-tiJWNzLWCe" data-bs-target="#lb-tiJWNzLWCe">
-                    <div class="icon-wrapper">
-                        <span class="mobi-mbri mobi-mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                    </div>
-                </div>
-                <h6 class="mbr-item-subtitle mbr-fonts-style align-center mb-2 mt-2 display-7">Freedom Park Lagos</h6>
-            </div>
-        </div>
-
-        <div class="modal mbr-slider" tabindex="-1" role="dialog" aria-hidden="true" id="tiJWNzLWCe-modal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="carousel slide" id="lb-tiJWNzLWCe" data-interval="5000" data-bs-interval="5000">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="assets/images/nike-art-gallery-506x607.jpg" alt="Mobirise Website Builder">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="assets/images/omenka-gallery-506x338.jpg" alt="Mobirise Website Builder">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="assets/images/images-275x183.jpg" alt="Mobirise Website Builder">
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="assets/images/freedom-park-lagos-506x380.jpg" alt="Mobirise Website Builder">
-                                </div>
-                            </div>
-                            <ol class="carousel-indicators">
-                                <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#lb-tiJWNzLWCe" data-bs-target="#lb-tiJWNzLWCe"></li>
-                                <li data-slide-to="1" data-bs-slide-to="1" data-target="#lb-tiJWNzLWCe" data-bs-target="#lb-tiJWNzLWCe"></li>
-                                <li data-slide-to="2" data-bs-slide-to="2" data-target="#lb-tiJWNzLWCe" data-bs-target="#lb-tiJWNzLWCe"></li>
-                                <li data-slide-to="3" data-bs-slide-to="3" data-target="#lb-tiJWNzLWCe" data-bs-target="#lb-tiJWNzLWCe"></li>
-                            </ol>
-                            <a role="button" href="" class="close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
-                            </a>
-                            <a class="carousel-control-prev carousel-control" role="button" data-slide="prev" data-bs-slide="prev" href="#lb-tiJWNzLWCe">
-                                <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
-                                <span class="sr-only visually-hidden">Previous</span>
-                            </a>
-                            <a class="carousel-control-next carousel-control" role="button" data-slide="next" data-bs-slide="next" href="#lb-tiJWNzLWCe">
-                                <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
-                                <span class="sr-only visually-hidden">Next</span>
-                            </a>
-                        </div>
-                    </div>
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-3 mbr-fonts-style display-2"><strong>See my Story</strong></h3>
+                <div class="social-list align-center">
+                   
+                    
+                        
+                        <a class="iconfont-wrapper bg-instagram m-2" href="https://www.instagram.com/p/gallery2305lagos" target="_blank">
+                            <span class="socicon-instagram socicon"></span>
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                 </div>
             </div>
         </div>
@@ -228,36 +201,6 @@
 
 </div></section>
 
-<section data-bs-version="5.1" class="image1 cid-tiJlQiLOU2" id="image1-n">
-    
-
-    
-    
-
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-8">
-                <div class="video-wrapper">
-
-                    <figure class="mbr-figure align-center">
-      <video height="500" width="320" controls="">
-        <source src="file:///C:/Users/Patrick/Desktop/Gallery2305/gallery2305/assets/video/video.mp4" type="video/mp4">
-      </video>
-    </figure>
-                   
-                </div>
-            </div>
-            <div class="col-12 col-lg">
-                <div class="text-wrapper">
-                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Art of Street hawking</strong></h3>
-                    <p class="mbr-text mbr-fonts-style display-7">The environment is the canvas and the vendor is the artist. In a way the vendor creates a feel that is unique and particular the anyone who encounters his work, it could be a lasting memory that would keep you coming back or just the way the presence gives life to the environment.
-<br>you will find your art.&nbsp;&nbsp;</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section data-bs-version="5.1" class="footer7 cid-tgzaezBdGi" once="footers" id="footer7-0">
 
     
@@ -274,32 +217,7 @@
         </div>
     </div>
 </section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  import animejs from "https://cdn.skypack.dev/animejs@3.2.1";
-
-function move({ clientX: x, clientY: y, target }) {
-	let scale = 1;
-
-	if (target && target.classList && target.classList.contains("link")) {
-		scale = 1.75;
-	}
-
-	const cursorElement = animejs({
-		targets: ".cursor",
-		translateX: Math.floor(x),
-		translateY: Math.floor(y),
-		rotate: x / -8 + 135,
-		scale,
-		easing: "easeOutElastic(1, 1)"
-	});
-}
-
-window.addEventListener("mousemove", move);
-
-window.onload = () =>
-	animejs({
-		targets: ".cursor",
-		opacity: 1
-	});
+  
   
 </body>
 </html>
