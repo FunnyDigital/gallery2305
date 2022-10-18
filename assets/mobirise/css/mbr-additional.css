@@ -1222,15 +1222,15 @@ a {
 .cid-tgzaezBdGi .media-container-row .mbr-text {
   color: #ffffff;
 }
-.cid-tkwkFOEaUB {
-  padding-top: 3rem;
+.cid-tkBek0CFaZ {
+  padding-top: 7rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
 }
-.cid-tkwkFOEaUB .mbr-fallback-image.disabled {
+.cid-tkBek0CFaZ .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-tkwkFOEaUB .mbr-fallback-image {
+.cid-tkBek0CFaZ .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -1240,9 +1240,70 @@ a {
   top: 0;
 }
 .cid-tkwtlIwZVS {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #efefef;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-tkwtlIwZVS :root {
+  font-size: 10px;
+}
+.cid-tkwtlIwZVS *,
+.cid-tkwtlIwZVS *::before,
+.cid-tkwtlIwZVS *::after {
+  box-sizing: border-box;
+}
+.cid-tkwtlIwZVS body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+.cid-tkwtlIwZVS .container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+.cid-tkwtlIwZVS .heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+.cid-tkwtlIwZVS .heading span {
+  display: block;
+}
+.cid-tkwtlIwZVS .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+}
+.cid-tkwtlIwZVS .gallery-item {
+  flex: 1 0 24rem;
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.cid-tkwtlIwZVS .gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+.cid-tkwtlIwZVS .gallery-image:hover {
+  transform: scale(1.15);
+}
+@supports (display: grid) {
+  .cid-tkwtlIwZVS .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+  .cid-tkwtlIwZVS .gallery,
+  .cid-tkwtlIwZVS .gallery-item {
+    margin: 0;
+  }
 }
 .cid-tjnwbcnYFR {
   padding-top: 30px;
