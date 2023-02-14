@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "gallery-2305",
+    "site": "gallery2305lagos",
     "public": "public",
     "ignore": [
       "firebase.json",
