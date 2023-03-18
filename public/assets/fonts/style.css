@@ -1,4 +1,9 @@
 @font-face {
+   font-family: 'LibreBodoni-Regular';
+   font-display: swap;
+   src: url('LibreBodoni-Regular/font.ttf');
+}
+@font-face {
    font-family: 'Constantine';
    font-display: swap;
    src: url('Constantine/font.ttf');
